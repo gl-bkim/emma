@@ -1,225 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
-  <title>Title</title>
-  <style>
-      body {
-          margin: 0;
-          font-family: 'Quicksand', sans-serif;
-          color: #ececec;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <title>Title</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+            color: #ececec;
 
-      }
+        }
 
-      input {
-          font-family: 'Quicksand', sans-serif;
-      }
+        input {
+            font-family: 'Quicksand', sans-serif;
+        }
 
-      .container {
-          display: flex;
-          flex-direction: column;
-      }
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
 
-      .content {
-          flex: 1;
-          background-color: #c2448a;
-          padding: 32px
-      }
+        .content {
+            flex: 1;
+            background-color: #c2448a;
+            padding: 32px
+        }
 
-      .logo {
-          height: 60px;
-      }
+        .logo {
+            height: 60px;
+        }
 
-      h3 {
-          font-size: 30px;
-          font-weight: 300;
-          margin: 24px 0 16px 0;
-      }
+        h3 {
+            font-size: 30px;
+            font-weight: 300;
+            margin: 24px 0 16px 0;
+        }
 
-      p {
-          font-size: 18px;
-          font-weight: 300;
-      }
+        p {
+            font-size: 18px;
+            font-weight: 300;
+        }
 
-      .signup-label {
-          font-size: 16px;
-          margin-bottom: 12px;
-      }
+        .signup-label {
+            font-size: 16px;
+            margin-bottom: 12px;
+        }
 
-      .input-wrapper {
-          border: 1px solid #ececec;
-          height: 34px;
-          padding: 0 12px;
-          border-radius: 24px;
-          overflow: hidden;
-      }
+        .input-wrapper {
+            border: 1px solid #ececec;
+            height: 34px;
+            padding: 0 12px;
+            border-radius: 24px;
+            overflow: hidden;
+        }
 
-      .input-wrapper input {
-          border: none;
-          outline: none;
-          background-color: #c2448a;
-          line-height: 34px;
-          padding: 0;
-          margin: 0;
-          color: #ececec;
-      }
+        .input-wrapper input {
+            border: none;
+            outline: none;
+            background-color: #c2448a;
+            line-height: 34px;
+            padding: 0;
+            margin: 0;
+            color: #ececec;
+        }
 
-      ::placeholder {
-          color: #ececec;
-      }
+        ::placeholder {
+            color: #ececec;
+        }
 
-      .animation-container {
-          position: relative;
-          display: flex;
-          overflow: hidden;
-          height: 500px;
-        backface-visibility: hidden;
-        -webkit-backface-visibility: hidden;
-      }
+        .animation-container {
+            position: relative;
+            display: flex;
+            overflow: hidden;
+            height: 500px;
+            backface-visibility: hidden;
+            -webkit-backface-visibility: hidden;
+        }
 
-      @media only screen and (min-width: 1200px) {
-          .container {
-              flex-direction: row;
-          }
+        @media only screen and (min-width: 1200px) {
+            .container {
+                flex-direction: row;
+            }
 
-          .content {
-              flex: 0 650px;
-              box-sizing: border-box;
-              margin: 0;
-              padding: 60px;
-              display: flex;
-              align-items: center;
-          }
+            .content {
+                flex: 0 650px;
+                box-sizing: border-box;
+                margin: 0;
+                padding: 60px;
+                display: flex;
+                align-items: center;
+            }
 
-          .animation-container {
-              flex: 1;
-              height: 100vh;
-          }
+            .animation-container {
+                flex: 1;
+                height: 100vh;
+            }
 
-          .logo {
-              height: 90px;
-              margin-bottom: 40px;
-          }
+            .logo {
+                height: 90px;
+                margin-bottom: 40px;
+            }
 
-          h3 {
-              font-size: 46px;
-              font-weight: 300;
-              margin: 24px 0 24px 0;
-          }
+            h3 {
+                font-size: 46px;
+                font-weight: 300;
+                margin: 24px 0 24px 0;
+            }
 
-          p {
-              font-size: 30px;
-              font-weight: 300;
-              margin-bottom: 60px;
-          }
+            p {
+                font-size: 30px;
+                font-weight: 300;
+                margin-bottom: 60px;
+            }
 
-          .signup-label {
-              font-size: 28px;
-              margin-bottom: 20px;
-          }
+            .signup-label {
+                font-size: 28px;
+                margin-bottom: 20px;
+            }
 
-          .input-wrapper {
-              border: 2px solid #ececec;
-              height: 60px;
-              padding: 0 24px;
-              border-radius: 34px;
-              overflow: hidden;
-          }
+            .input-wrapper {
+                position: relative;
+                border: 2px solid #ececec;
+                height: 60px;
+                padding: 0 24px;
+                border-radius: 34px;
+                overflow: hidden;
+            }
 
-          .input-wrapper input {
-              line-height: 60px;
-              font-size: 24px;
-              width: 100%;
-          }
+            .input-wrapper input {
+                line-height: 60px;
+                font-size: 24px;
+                width: 100%;
+            }
 
-          ::placeholder {
-              color: #ececec;
-              font-style: italic;
-          }
-      }
+            .input-wrapper img {
+                position: absolute;
+                top: calc(50% - 21px);
+                right: 10px;
+                height: 42px;
+                cursor: pointer;
+            }
 
-      @media only screen and (min-width: 1600px) {
-          .content {
-              flex: 1;
-              padding: 90px;
-          }
+            ::placeholder {
+                color: #ececec;
+                font-style: italic;
+            }
+        }
 
-          .animation-container {
-              flex: 0 900px;
+        @media only screen and (min-width: 1600px) {
+            .content {
+                flex: 1;
+                padding: 90px;
+            }
 
-          }
-      }
+            .animation-container {
+                flex: 0 900px;
 
-      @media only screen and (min-width: 2000px) {
-          .animation-container {
-              flex: 0 1200px;
-          }
-      }
-  </style>
+            }
+        }
+
+        @media only screen and (min-width: 2000px) {
+            .animation-container {
+                flex: 0 1200px;
+            }
+        }
+    </style>
 </head>
 <body onload="onLoad()">
 <div class="container">
-  <div class="content">
-    <div>
-      <img class="logo" src="logo.png" />
-      <h3>Take Charge of Your Cancer Journey with Emma.</h3>
-      <p>A personal cancer care companion,<br /> in your pocket.</p>
+    <div class="content">
+        <div>
+            <img class="logo" src="logo.png"/>
+            <h3>Take Charge of Your Cancer Journey with Emma.</h3>
+            <p>A personal cancer care companion,<br/> in your pocket.</p>
 
-      <div class="signup-label">Sign up to our newsletter:</div>
-      <div class="input-wrapper">
-        <input type="email" placeholder="Enter your email" />
-      </div>
+            <div class="signup-label">Sign up to our newsletter:</div>
+            <div class="input-wrapper">
+                <input type="email" placeholder="Enter your email"/>
+                <img src="arrow.png"/>
+            </div>
+        </div>
     </div>
-  </div>
-  <div class="animation-container">
-    <div class="sliding-background"></div>
-    <div class="sliding-background2"></div>
-    <div class="sliding-background3"></div>
-<!--    <div class="circles1"></div>-->
-<!--    <div class="circles2"></div>-->
-  </div>
+    <div class="animation-container">
+        <div class="sliding-background"></div>
+        <div class="sliding-background2"></div>
+        <div class="sliding-background3"></div>
+        <!--    <div class="circles1"></div>-->
+        <!--    <div class="circles2"></div>-->
+    </div>
 </div>
 <script type="application/javascript">
-  let currentStyle;
+    let currentStyle;
 
-  function addNewCSS(css_text) {
-    css_text = encodeURIComponent(css_text);
-    const url = `data:text/css,${css_text}`;
-    const link = document.createElement("link");
-    link.rel = "stylesheet";
-    link.href = url;
-    document.head.appendChild(link);
-    if (currentStyle) {
-      document.head.removeChild(currentStyle);
+    function addNewCSS(css_text) {
+        css_text = encodeURIComponent(css_text);
+        const url = `data:text/css,${css_text}`;
+        const link = document.createElement("link");
+        link.rel = "stylesheet";
+        link.href = url;
+        document.head.appendChild(link);
+        if (currentStyle) {
+            document.head.removeChild(currentStyle);
+        }
+        currentStyle = link;
     }
-    currentStyle = link;
-  }
 
 
-  function onLoad() {
-    const width = window.innerWidth;
-    const contentWidth = width >= 1200 ? document.querySelector(".content").clientWidth : 0;
-    const w25 = (width - contentWidth) * 0.25;
-    const w50 = (width - contentWidth) * 0.5;
-    const image1Height = Math.round(w25 * 4915 / 501);
-    const image2Height = Math.round(w25 * 4959 / 501);
-    const image3Height = Math.round(w50 * 4738 / 1001);
-    const circle1Height = Math.round(w50 * 4341 / 1001);
-    const circle2Height = Math.round(w50 * 4340 / 1001);
+    function onLoad() {
+        const width = window.innerWidth;
+        const contentWidth = width >= 1200 ? document.querySelector(".content").clientWidth : 0;
+        const w25 = (width - contentWidth) * 0.25;
+        const w50 = (width - contentWidth) * 0.5;
+        const image1Height = Math.round(w25 * 4915 / 501);
+        const image2Height = Math.round(w25 * 4959 / 501);
+        const image3Height = Math.round(w50 * 4738 / 1001);
+        const circle1Height = Math.round(w50 * 4341 / 1001);
+        const circle2Height = Math.round(w50 * 4340 / 1001);
 
-    console.log(w25, image1Height);
+        console.log(w25, image1Height);
 
-    addNewCSS(`
+        addNewCSS(`
     .sliding-background {
         background: url(panel-1.jpg) repeat-y;
         background-size: contain;
         height: ${image1Height * 3}px;
         width: 25%;
         animation: slide 19s linear infinite;
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
     }
 
      @keyframes slide{
@@ -237,6 +249,8 @@
           height: ${image2Height * 3}px;
           width: 25%;
           animation: slide2 18s linear infinite;
+          backface-visibility: hidden;
+          -webkit-backface-visibility: hidden;
       }
 
       @keyframes slide2{
@@ -254,6 +268,8 @@
           height: ${image3Height * 3}px;
           width: 50%;
           animation: slide3 16s linear infinite;
+          backface-visibility: hidden;
+          -webkit-backface-visibility: hidden;
       }
 
       @keyframes slide3{
@@ -306,9 +322,9 @@
           }
       }
     `);
-  }
+    }
 
-  addEventListener("resize", () => onLoad());
+    addEventListener("resize", () => onLoad());
 </script>
 </body>
 </html>
