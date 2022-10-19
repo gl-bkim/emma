@@ -12,6 +12,7 @@
           margin: 0;
           font-family: 'Quicksand', sans-serif;
           color: #ececec;
+
       }
 
       input {
@@ -75,7 +76,9 @@
           position: relative;
           display: flex;
           overflow: hidden;
-          height: 500px
+          height: 500px;
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
       }
 
       @media only screen and (min-width: 1200px) {
