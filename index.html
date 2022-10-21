@@ -6,13 +6,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
-    <title>Title</title>
+    <title>emma - Breast cancer companion chat bot</title>
+    <link rel="icon" type="image/png" href="favicon.png">
     <style>
         body {
             margin: 0;
             font-family: 'Quicksand', sans-serif;
             color: #ececec;
-
         }
 
         input {
@@ -27,22 +27,29 @@
         .content {
             flex: 1;
             background-color: #c2448a;
-            padding: 32px
+            padding: 28px
+        }
+
+        .content > div {
+            display: flex;
+            flex-direction: column;
         }
 
         .logo {
-            height: 60px;
+            height: 50px;
+            margin-bottom: 4px;
         }
 
         h3 {
-            font-size: 30px;
+            font-size: 26px;
             font-weight: 300;
-            margin: 24px 0 16px 0;
+            margin: 0 0 10px 0;
         }
 
         p {
             font-size: 18px;
             font-weight: 300;
+            margin: 12px 0;
         }
 
         .signup-label {
@@ -57,6 +64,7 @@
             padding: 0 12px;
             border-radius: 24px;
             overflow: hidden;
+            margin-bottom: 16px;
         }
 
         .input-wrapper input {
@@ -77,7 +85,6 @@
             cursor: pointer;
         }
 
-
         ::placeholder {
             color: #ececec;
         }
@@ -89,22 +96,37 @@
             height: 500px;
         }
 
-        .animation-container * {
-            backface-visibility: hidden;
-            -webkit-backface-visibility: hidden;
-            transform-style: preserve-3d;
-            -webkit-transform-style: preserve-3d;
-            animation-fill-mode: forwards;
+        .stop {
+            animation: none !important;
         }
 
+        .footer a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ececec;
+            text-decoration: none;
+            margin-bottom: 4px;
+            font-size: 14px;
+        }
 
-        @media only screen and (min-width: 1200px) {
+        .footer img{
+            width: 30px;
+            margin-right: 12px;
+        }
+
+        .footer div {
+            text-align: center;
+            font-size: 14px;
+        }
+
+        @media only screen and (min-width: 1000px) {
             .container {
                 flex-direction: row;
             }
 
             .content {
-                flex: 0 650px;
+                width: 50%;
                 box-sizing: border-box;
                 margin: 0;
                 padding: 60px;
@@ -115,37 +137,39 @@
             .animation-container {
                 flex: 1;
                 height: 100vh;
+                background-color: #12295a;
             }
 
             .logo {
                 height: 90px;
+                width: 264px;
+                margin-left: -14px;
                 margin-bottom: 40px;
             }
 
             h3 {
-                font-size: 46px;
+                font-size: 42px;
                 font-weight: 300;
-                margin: 24px 0 24px 0;
+                margin: 0 0 24px 0;
             }
 
             p {
-                font-size: 30px;
+                font-size: 24px;
                 font-weight: 300;
                 margin-bottom: 60px;
             }
 
             .signup-label {
-                font-size: 28px;
+                font-size: 24px;
                 margin-bottom: 20px;
             }
 
             .input-wrapper {
-                position: relative;
                 border: 2px solid #ececec;
                 height: 60px;
                 padding: 0 24px;
                 border-radius: 34px;
-                overflow: hidden;
+                margin-bottom: 40px;
             }
 
             .input-wrapper input {
@@ -160,27 +184,71 @@
                 height: 42px;
             }
 
-            ::placeholder {
-                color: #ececec;
-                font-style: italic;
+            .footer a {
+                margin-bottom: 10px;
+                font-size: 19px;
+            }
+
+            .footer img{
+                width: 40px;
+            }
+
+            .footer div {
+                font-size: 16px;
+                margin: 0 -20px;
             }
         }
 
-        @media only screen and (min-width: 1600px) {
+        @media only screen and (min-width: 1200px) {
             .content {
-                flex: 1;
                 padding: 90px;
             }
 
-            .animation-container {
-                flex: 0 900px;
+            h3 {
+                font-size: 50px;
+            }
 
+            p {
+                font-size: 28px;
+            }
+
+            .signup-label {
+                font-size: 26px;
+            }
+
+
+
+            .input-wrapper input {
+                font-size: 26px;
             }
         }
 
-        @media only screen and (min-width: 2000px) {
-            .animation-container {
-                flex: 0 1200px;
+        @media only screen and (min-width: 1500px) {
+            .content {
+                padding: 100px;
+            }
+
+            h3 {
+                font-size: 60px;
+            }
+
+            p {
+                font-size: 32px;
+            }
+
+            .signup-label {
+                font-size: 28px;
+            }
+
+            .input-wrapper input {
+                font-size: 28px;
+            }
+        }
+
+
+        @media only screen and (min-width: 1800px) {
+            .content {
+                max-width: 900px;
             }
         }
     </style>
@@ -190,7 +258,7 @@
     <div class="content">
         <div>
             <img class="logo" src="logo.png"/>
-            <h3>Take Charge of Your Cancer Journey with Emma.</h3>
+            <h3>Take Charge of Your<br/> Cancer Journey<br/> with Emma.</h3>
             <p>A personal cancer care companion,<br/> in your pocket.</p>
 
             <div class="signup-label">Sign up to our newsletter:</div>
@@ -198,18 +266,30 @@
                 <input type="email" placeholder="Enter your email"/>
                 <img src="arrow.png"/>
             </div>
+            <div class="footer">
+                <a href="https://www.goodlabs.studio/">
+                    <img src="goodlabs.png"/>
+                   a GoodLabs Studio Venture
+                </a>
+                <div>Incubated from a Department of National Defence funded project.</div>
+            </div>
         </div>
     </div>
     <div class="animation-container">
-        <div class="sliding-background"></div>
-        <div class="sliding-background2"></div>
-        <div class="sliding-background3"></div>
-        <!--    <div class="circles1"></div>-->
-        <!--    <div class="circles2"></div>-->
+        <div class="sliding-background">
+            <div></div>
+        </div>
+        <div class="sliding-background2">
+            <div></div>
+        </div>
+        <div class="sliding-background3">
+            <div></div>
+        </div>
     </div>
 </div>
 <script type="application/javascript">
     let currentStyle;
+    let timeout;
 
     function addNewCSS(css_text) {
         css_text = encodeURIComponent(css_text);
@@ -233,46 +313,53 @@
         const image1Height = Math.round(w25 * 4915 / 501);
         const image2Height = Math.round(w25 * 4959 / 501);
         const image3Height = Math.round(w50 * 4738 / 1001);
-        const circle1Height = Math.round(w50 * 4341 / 1001);
-        const circle2Height = Math.round(w50 * 4340 / 1001);
 
-        console.log(w25, image1Height);
+        document.querySelectorAll('.animation-container > div > div').forEach(e => e.classList.remove('stop'))
 
         addNewCSS(`
     .sliding-background {
         background: url(panel-1.jpg) repeat-y;
         background-size: contain;
-        height: ${image1Height * 3}px;
+        height: ${image1Height * 4}px;
         width: 25%;
-        animation: slide 19s linear infinite;
-        backface-visibility: hidden;
-        -webkit-backface-visibility: hidden;
-        animation-fill-mode: forwards;
+    }
+
+
+    .sliding-background > div {
+        background: url(panel-1.jpg) repeat-y;
+        background-size: contain;
+        height: 100%;
+        animation: slide ${19 * 3}s linear infinite;
+        animation-delay: 0.2s
     }
 
      @keyframes slide{
           0% {
-            transform: translate3d(0, -${image1Height * 0.48}px, 0);
+            transform: translate3d(0, 0, 0);
           }
           100% {
-            transform: translate3d(0, -${image1Height + image1Height * 0.48}px, 0);
+            transform: translate3d(0, -${image1Height * 3}px, 0);
           }
       }
 
       .sliding-background2 {
           background: url(panel-2.jpg) repeat-y;
           background-size: contain;
-          height: ${image2Height * 3}px;
+          height: ${image2Height * 4}px;
           width: 25%;
-          animation: slide2 18s linear infinite;
-          backface-visibility: hidden;
-          -webkit-backface-visibility: hidden;
-          animation-fill-mode: forwards;
+      }
+
+       .sliding-background2 > div {
+          background: url(panel-2.jpg) repeat-y;
+          background-size: contain;
+          height: 100%;
+          animation: slide2 ${18 * 3}s linear infinite;
+          animation-delay: 0.2s;
       }
 
       @keyframes slide2{
           0% {
-              transform: translate3d(0, -${image2Height}px, 0);
+              transform: translate3d(0, -${image2Height * 3}px, 0);
           }
           100% {
               transform: translate3d(0, 0, 0);
@@ -282,67 +369,34 @@
       .sliding-background3 {
           background: url(panel-3.jpg) repeat-y;
           background-size: contain;
-          height: ${image3Height * 3}px;
+          height: ${image3Height * 4}px;
           width: 50%;
-          animation: slide3 16s linear infinite;
-          backface-visibility: hidden;
-          -webkit-backface-visibility: hidden;
-          animation-fill-mode: forwards;
+      }
+
+      .sliding-background3 > div {
+          background: url(panel-3.jpg) repeat-y;
+          background-size: contain;
+          height: 100%;
+          animation: slide3 ${15 * 3}s linear infinite;
+          animation-delay: 0.2s
       }
 
       @keyframes slide3{
           0% {
-            transform: translate3d(0, -${image3Height * 0.48}px, 0);
+            transform: translate3d(0, 0, 0);
           }
           100% {
-            transform: translate3d(0, -${image3Height + image3Height * 0.48}px, 0);
-          }
-      }
-
-      .circles1 {
-        background: url(circles-1.png) repeat-y;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 50%;
-        height: ${circle1Height * 3}px;
-        background-size: contain;
-        animation: slide4 15s linear infinite;
-        margin-top: -${circle1Height}px;
-      }
-
-      @keyframes slide4{
-         0% {
-              transform: translate3d(0, -${circle2Height - circle2Height * .12}px, 0);
-          }
-          100% {
-              transform: translate3d(0, ${circle2Height * .12}px, 0);
-          }
-      }
-
-     .circles2 {
-        background: url(circles-2.png) repeat-y;
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 50%;
-        height: ${circle2Height * 3}px;
-        background-size: contain;
-        animation: slide5 17s linear infinite;
-      }
-
-      @keyframes slide5{
-          0% {
-            transform: translate3d(0, -${circle2Height * 0.48}px, 0);
-          }
-          100% {
-            transform: translate3d(0, -${circle2Height + circle2Height * 0.48}px, 0);
+            transform: translate3d(0, -${image3Height * 3}px, 0);
           }
       }
     `);
     }
 
-    addEventListener("resize", () => onLoad());
+    addEventListener("resize", () => {
+        document.querySelectorAll('.animation-container > div > div').forEach(e => e.classList.add('stop'))
+        clearTimeout(timeout);
+        timeout = setTimeout(onLoad, 200);
+    });
 </script>
 </body>
 </html>
