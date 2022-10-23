@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta property="og:title" content="Breast cancer companion chat bot">
+    <meta property="og:site_name" content="emmacares">
+    <meta property="og:url" content="https://emma-one.vercel.app">
+    <meta property="og:description" content="Take Charge of Your Cancer Journey with Emma. A personal cancer care companion, in your pocket.">
+    <meta property="og:type" content="">
+    <meta property="og:image" content="https://emma-one.vercel.app/og-image">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
@@ -25,14 +31,18 @@
         }
 
         .content {
+            display: flex;
+            flex-direction: column;
             flex: 1;
             background-color: #c2448a;
             padding: 28px 40px;
         }
 
-        .content > div {
+        .slogan {
             display: flex;
             flex-direction: column;
+            flex: 1;
+            justify-content: center;
         }
 
         .logo {
@@ -66,7 +76,7 @@
             padding: 0 12px;
             border-radius: 24px;
             overflow: hidden;
-            margin-bottom: 16px;
+            margin-bottom: 0;
         }
 
         .input-wrapper input {
@@ -102,25 +112,6 @@
             animation: none !important;
         }
 
-        .footer a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #ececec;
-            text-decoration: none;
-            margin-bottom: 4px;
-            font-size: 14px;
-        }
-
-        .footer img {
-            width: 30px;
-            margin-right: 12px;
-        }
-
-        .footer div {
-            text-align: center;
-            font-size: 14px;
-        }
 
         @media only screen and (min-width: 1000px) {
             .container {
@@ -131,9 +122,8 @@
                 width: 50%;
                 box-sizing: border-box;
                 margin: 0;
-                padding: 60px;
+                padding: 45px;
                 display: flex;
-                align-items: center;
             }
 
             .animation-container {
@@ -146,19 +136,18 @@
                 height: 90px;
                 width: 264px;
                 margin-left: -14px;
-                margin-bottom: 40px;
             }
 
             h3 {
-                font-size: 42px;
+                font-size: 46px;
                 font-weight: 300;
                 margin: 0 0 24px 0;
             }
 
             p {
-                font-size: 24px;
+                font-size: 28px;
+                margin: 0;
                 font-weight: 300;
-                margin-bottom: 60px;
             }
 
             .signup-label {
@@ -171,7 +160,6 @@
                 height: 60px;
                 padding: 0 24px;
                 border-radius: 34px;
-                margin-bottom: 80px;
             }
 
             .input-wrapper input {
@@ -186,24 +174,11 @@
                 height: 42px;
             }
 
-            .footer a {
-                margin-bottom: 10px;
-                font-size: 19px;
-            }
-
-            .footer img {
-                width: 40px;
-            }
-
-            .footer div {
-                font-size: 16px;
-                margin: 0 -20px;
-            }
         }
 
         @media only screen and (min-width: 1200px) {
             .content {
-                padding: 90px;
+                padding: 60px;
             }
 
             h3 {
@@ -226,7 +201,7 @@
 
         @media only screen and (min-width: 1500px) {
             .content {
-                padding: 100px;
+                padding: 80px;
             }
 
             h3 {
@@ -257,23 +232,19 @@
 <body onload="onLoad()">
 <div class="container">
     <div class="content">
-        <div>
+        <div class="header">
             <img class="logo" src="logo.png"/>
-            <h3>Take Charge of Your<br/> Cancer Journey<br/> with Emma.</h3>
+        </div>
+        <div class="slogan">
+            <h3>Take Charge of<br/> Your Cancer Journey<br/> with Emma.</h3>
             <p>A personal cancer care companion,<br/> in your pocket.</p>
-
+        </div>
+        <div class="signup">
             <div class="signup-label">Sign up to our newsletter:</div>
             <form class="input-wrapper" onsubmit="signup(event)">
                 <input type="email" id="email" placeholder="Enter your email"/>
                 <img src="arrow.png"/>
             </form>
-            <div class="footer">
-                <a href="https://www.goodlabs.studio/">
-                    <img src="goodlabs.png"/>
-                    a GoodLabs Studio Venture
-                </a>
-                <div>Incubated from a Department of National Defence funded project.</div>
-            </div>
         </div>
     </div>
     <div class="animation-container">
