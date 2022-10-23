@@ -7,8 +7,9 @@
     <meta property="og:site_name" content="emmacares">
     <meta property="og:url" content="https://emma-one.vercel.app">
     <meta property="og:description" content="Take Charge of Your Cancer Journey with Emma. A personal cancer care companion, in your pocket.">
-    <meta property="og:type" content="">
-    <meta property="og:image" content="https://emma-one.vercel.app/og-image">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://emma-one.vercel.app/og-image.png">
+    <meta property="og:locale" content="en_US" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
@@ -233,7 +234,7 @@
 <div class="container">
     <div class="content">
         <div class="header">
-            <img class="logo" src="logo.png"/>
+            <img class="logo" src="logo.webp" alt="emma logo"/>
         </div>
         <div class="slogan">
             <h3>Take Charge of<br/> Your Cancer Journey<br/> with Emma.</h3>
@@ -243,7 +244,7 @@
             <div class="signup-label">Sign up to our newsletter:</div>
             <form class="input-wrapper" onsubmit="signup(event)">
                 <input type="email" id="email" placeholder="Enter your email"/>
-                <img src="arrow.png"/>
+                <img src="arrow.png" alt="register"/>
             </form>
         </div>
     </div>
@@ -290,7 +291,7 @@
 
         addNewCSS(`
     .sliding-background {
-        background: url(panel-1.jpg) repeat-y;
+        background: url(panel-1.webp) repeat-y;
         background-size: contain;
         height: ${image1Height * 4}px;
         width: 25%;
@@ -298,7 +299,7 @@
 
 
     .sliding-background > div {
-        background: url(panel-1.jpg) repeat-y;
+        background: url(panel-1.webp) repeat-y;
         background-size: contain;
         height: 100%;
         animation: slide ${19 * 3}s linear infinite;
@@ -315,14 +316,14 @@
       }
 
       .sliding-background2 {
-          background: url(panel-2.jpg) repeat-y;
+          background: url(panel-2.webp) repeat-y;
           background-size: contain;
           height: ${image2Height * 4}px;
           width: 25%;
       }
 
        .sliding-background2 > div {
-          background: url(panel-2.jpg) repeat-y;
+          background: url(panel-2.webp) repeat-y;
           background-size: contain;
           height: 100%;
           animation: slide2 ${18 * 3}s linear infinite;
@@ -339,14 +340,14 @@
       }
 
       .sliding-background3 {
-          background: url(panel-3.jpg) repeat-y;
+          background: url(panel-3.webp) repeat-y;
           background-size: contain;
           height: ${image3Height * 4}px;
           width: 50%;
       }
 
       .sliding-background3 > div {
-          background: url(panel-3.jpg) repeat-y;
+          background: url(panel-3.webp) repeat-y;
           background-size: contain;
           height: 100%;
           animation: slide3 ${15 * 3}s linear infinite;
