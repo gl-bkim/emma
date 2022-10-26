@@ -122,10 +122,21 @@
 
         .input-wrapper img {
             position: absolute;
-            top: calc(50% - 15px);
-            right: 8px;
-            height: 30px;
+            top: calc(50% - 12px);
+            right: 6px;
+            height: 24px;
             cursor: pointer;
+            pointer-events: none;
+        }
+
+        .submit-button {
+            position: absolute;
+            top: 0;
+            right: 6px;
+            width: 36px;
+            height: 36px;
+            cursor: pointer;
+            background-color: transparent;
         }
 
         ::placeholder {
@@ -226,9 +237,15 @@
             }
 
             .input-wrapper img {
-                top: calc(50% - 21px);
+                top: calc(50% - 22px);
                 right: 10px;
                 height: 42px;
+            }
+
+            .submit-button {
+                right: 6px;
+                width: 64px;
+                height: 64px;
             }
 
         }
@@ -309,7 +326,10 @@
             <div class="signup-label">Get in touch with Emma:</div>
             <form class="input-wrapper" onsubmit="signup(event)">
                 <input type="email" id="email" placeholder="Enter your email" required/>
-                <img src="arrow.png" alt="register"/>
+                <div class="submit-button">
+                    <input type="submit" value=""/>
+                    <img src="arrow.png" alt="register"/>
+                </div>
             </form>
             <div class="signup-response">Emma will get in touch with you soon!</div>
         </div>
