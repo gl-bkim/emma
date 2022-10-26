@@ -254,7 +254,7 @@
             }
 
             h3 {
-                font-size: 56px;
+                font-size: 45px;
                 margin: 0 0 24px 0;
             }
 
@@ -264,37 +264,55 @@
                 font-weight: 300;
             }
 
-            .signup-label {
-                font-size: 24px;
-                margin-bottom: 20px;
-            }
-
             .input-wrapper {
                 border: 2px solid #ececec;
                 height: 60px;
-                padding: 0 24px;
                 border-radius: 34px;
             }
 
             .input-wrapper input {
                 line-height: 60px;
                 font-size: 24px;
-                width: 100%;
+                width: calc(100% - 50px) !important;
             }
 
             .input-wrapper img {
                 top: calc(50% - 21px);
-                right: 10px;
+                height: 42px;
+                right: 16px;
+            }
+
+            .submit-button {
+                position: absolute;
+                top: calc(50% - 21px);
+                right: 8px;
+                width: 42px;
                 height: 42px;
             }
 
+            #mc_embed_signup .mc-field-group label {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+
+            #mc_embed_signup .mc-field-group {
+                padding-bottom: 10px;
+            }
+
+            #mc_embed_signup #mc-embedded-subscribe-form div.mce_inline_error {
+                font-size: 16px;
+            }
+
+            #mc_embed_signup #mce-success-response {
+                font-size: 18px;
+            }
+
+            #mc_embed_signup #mce-error-response {
+                font-size: 14px;
+            }
         }
 
         @media only screen and (min-width: 1200px) {
-            .content {
-                padding: 60px;
-            }
-
             h3 {
                 font-size: 50px;
             }
@@ -303,21 +321,13 @@
                 font-size: 28px;
             }
 
-            .signup-label {
-                font-size: 26px;
-            }
-
-
             .input-wrapper input {
                 font-size: 26px;
             }
+
         }
 
         @media only screen and (min-width: 1500px) {
-            .content {
-                padding: 80px;
-            }
-
             h3 {
                 font-size: 60px;
             }
