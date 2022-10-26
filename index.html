@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta name=description content="A Personal Cancer Care Companion, in Your Pocket">
-    <meta property="og:title" content="Take Charge of Your Cancer Journey with Emma Cares">
+    <meta property="og:title" content="Take Charge of Your Cancer Journey with Emma">
     <meta property="og:site_name" content="Emma Cares">
     <meta property="og:url" content="https://emmacares.ai">
     <meta property="og:description" content="A Personal Cancer Care Companion, in Your Pocket">
@@ -19,17 +19,24 @@
     <meta itemprop="thumbnailUrl" content="https://emmacares.ai/og-image.png">
     <link rel="image_src" href="https://emmacares.ai/og-image.png">
     <meta itemprop="image" content="https://emmacares.ai/og-image.png">
-    <meta name="twitter:title" content="Take Charge of Your Cancer Journey with Emma Cares">
+    <meta name="twitter:title" content="Take Charge of Your Cancer Journey with Emma">
     <meta name="twitter:image" content="https://emmacares.ai/og-image.png">
     <meta name="twitter:url" content="https://emmacares.ai">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:description" content="A Personal Cancer Care Companion, in Your Pocket">
+    <meta name="keywords" content="the breast cancer patients">
     <link rel="canonical" href="https://emmacares.ai">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap" rel="stylesheet">
     <title>Emma Cares</title>
     <link rel="icon" type="image/png" href="favicon.png">
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-071822.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+
+        /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+           We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+    </style>
     <style>
         body {
             margin: 0;
@@ -50,8 +57,8 @@
             display: flex;
             flex-direction: column;
             background-color: #c2448a;
-            padding: 28px 40px;
-            height: 386px;
+            padding: 28px 40px 0 40px;
+            height: 400px;
         }
 
         .slogan {
@@ -89,20 +96,21 @@
             position: relative;
             border: 1px solid #ececec;
             height: 34px;
-            padding: 0 12px;
+            padding: 0 30px 0 0;
             border-radius: 24px;
             overflow: hidden;
             margin-bottom: 0;
         }
 
         .input-wrapper input {
-            border: none;
+            border: none !important;
             outline: none;
             background-color: #c2448a;
             line-height: 34px;
-            padding: 0;
-            margin: 0;
+            padding: 0 12px !important;
+            margin: 0 !important;
             color: #ececec;
+            width: calc(100% - 30px) !important;
         }
 
         .input-wrapper img {
@@ -126,6 +134,96 @@
 
         .stop {
             animation: none !important;
+        }
+
+        #mc_embed_signup {
+            background:#c2448a;
+            clear:left;
+        }
+
+        #mc_embed_signup form {
+            margin: 0;
+        }
+
+        #mc_embed_signup .mc-field-group {
+            width: 100%;
+            margin-bottom: 0;
+        }
+
+        #mc_embed_signup .helper_text {
+            background-color: #c2448a !important;
+            padding: 0 !important;
+        }
+
+        #mc_embed_signup .mc-field-group label {
+            margin-bottom: 10px;
+        }
+
+        #mc_embed_signup #mc-embedded-subscribe-form div.mce_inline_error {
+            background-color: #c2448a !important;
+            color: #ececec !important;
+            margin: 0 !important;
+            font-size: 12px;
+        }
+
+        #mc_embed_signup div#mce-responses {
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+
+        #mc_embed_signup div.response {
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+
+        #mc_embed_signup #mce-success-response {
+            color: #ececec;
+            font-size: 14px;
+        }
+
+        #mc_embed_signup #mce-error-response {
+            color: #ececec;
+            font-size: 12px;
+        }
+
+        .submit-button {
+            position: absolute;
+            top: calc(50% - 12px);
+            right: 4px;
+            width: 24px;
+            height: 24px;
+        }
+
+        .submit-button input {
+            background-color: transparent !important;
+        }
+
+        .submit-button img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            height: 24px;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: center;
+            padding: 12px 0;
+        }
+
+        .footer img {
+            width: 32px;
+            height: 20px;
+            cursor: pointer;
+        }
+
+        .footer-logo {
+            position: relative;
+        }
+
+        .footer-logo > div {
+            position: absolute;
         }
 
         @media only screen and (min-width: 1000px) {
@@ -249,18 +347,46 @@
 <div class="container">
     <div class="content">
         <div class="header">
-            <img class="logo" src="logo.webp" alt="emma logo"/>
+            <img class="logo" src="logo.webp" alt="the breast cancer patients" title="the breast cancer patients"/>
         </div>
         <div class="slogan">
             <h3>Take Charge of<br/> Your Cancer Journey<br/> with Emma.</h3>
             <p>A personal cancer care companion,<br/> in your pocket.</p>
         </div>
         <div class="signup">
-            <div class="signup-label">Get in touch with Emma:</div>
-            <form class="input-wrapper" onsubmit="signup(event)">
-                <input type="email" id="email" placeholder="Enter your email"/>
-                <img src="arrow.png" alt="register"/>
-            </form>
+            <div id="mc_embed_signup">
+                <form action="https://studio.us14.list-manage.com/subscribe/post?u=0e109956382b410fcd763e71b&amp;id=88e22200c0&amp;f_id=002e84e0f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    <div id="mc_embed_signup_scroll">
+                        <div class="mc-field-group">
+                            <label for="mce-EMAIL">Get in touch with Emma:</span>
+                            </label>
+                            <div class="input-wrapper">
+                                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Enter your email" required>
+                                <div class="clear submit-button">
+                                    <input type="submit" value="" name="" id="mc-embedded-subscribe" class="button">
+                                    <img src="arrow.png" alt="the breast cancer patients" title="the breast cancer patients"/>
+                                </div>
+                            </div>
+                            <span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
+                        </div>
+                        <div id="mce-responses" class="clear">
+                            <div class="response" id="mce-error-response" style="display:none"></div>
+                            <div class="response" id="mce-success-response" style="display:none"></div>
+                        </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                            <input type="text" name="b_0e109956382b410fcd763e71b_88e22200c0" tabindex="-1" value=""></div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="footer">
+            <a class="footer-logo" href="https://www.goodlabs.studio/" target="_blank">
+                <img src="goodlabs.png" alt="the breast cancer patients" title="the breast cancer patients">
+<!--                <div>a GoodLabs Studio Venture <br/>Incubated from a Department of National Defence funded project-->
+<!--                </div>-->
+            </a>
+
         </div>
     </div>
     <div class="animation-container">
@@ -275,6 +401,7 @@
         </div>
     </div>
 </div>
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 <script type="application/javascript">
     let currentStyle;
     let timeout;
